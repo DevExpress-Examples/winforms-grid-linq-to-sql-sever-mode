@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.375" name="AdvWorks">
+  <DataContextMoniker Name="/AdvWorksDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5cb37e62-ca36-4d72-aecb-29ab0fc2ec07" absoluteBounds="0.5, 0.5, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/AdvWorksDataContext/PurchaseOrderHeader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cdc6a46e-4e71-4cd0-a952-15974284ba97" absoluteBounds="0.515, 0.96, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17fdd658-3b21-48f3-ac07-1728626621e4" absoluteBounds="0.5, 3.875, 2, 2.5752791341145831">
+      <DataClassMoniker Name="/AdvWorksDataContext/PurchaseOrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32ab9ac4-889a-44e6-9f16-fa9150295eb6" absoluteBounds="0.515, 4.335, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5 : 3.40397379557292); (1.5 : 3.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AdvWorksDataContext/PurchaseOrderHeader/PurchaseOrderHeader_PurchaseOrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="5cb37e62-ca36-4d72-aecb-29ab0fc2ec07" />
+        <classShapeMoniker Id="17fdd658-3b21-48f3-ac07-1728626621e4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e615ff0a-43d7-4165-8522-4ec3019f98b2" absoluteBounds="2.875, 4.25, 2, 4.8761417643229157">
+      <DataClassMoniker Name="/AdvWorksDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18732c3a-9638-46d8-91de-c5a54ec97f23" absoluteBounds="2.89, 4.71, 1.9700000000000002, 4.3161417643229161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 5.35013956705729); (2.5 : 5.35013956705729)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AdvWorksDataContext/Product/Product_PurchaseOrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="e615ff0a-43d7-4165-8522-4ec3019f98b2" />
+        <classShapeMoniker Id="17fdd658-3b21-48f3-ac07-1728626621e4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="229fce42-9dfa-468d-b825-5ef0dfc3ba85" absoluteBounds="2.875, 0.5, 2, 3.3970157877604166">
+      <DataClassMoniker Name="/AdvWorksDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f650cf5-e680-4f8f-9368-8cbe485b94b7" absoluteBounds="2.89, 0.96, 1.9700000000000002, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 1.95198689778646); (2.5 : 1.95198689778646)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AdvWorksDataContext/Employee/Employee_PurchaseOrderHeader" />
+      <nodes>
+        <classShapeMoniker Id="229fce42-9dfa-468d-b825-5ef0dfc3ba85" />
+        <classShapeMoniker Id="5cb37e62-ca36-4d72-aecb-29ab0fc2ec07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.58423076923077 : 3.89701578776042); (3.58423076923077 : 4.14701578776042); (4.17961538461539 : 4.14701578776042); (4.17961538461539 : 3.89701578776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AdvWorksDataContext/Employee/Employee_Employee" />
+      <nodes>
+        <classShapeMoniker Id="229fce42-9dfa-468d-b825-5ef0dfc3ba85" />
+        <classShapeMoniker Id="229fce42-9dfa-468d-b825-5ef0dfc3ba85" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cd72f467-0486-4310-a2ac-456edaec9ab1" absoluteBounds="5.125, 0.5, 2, 3.23266845703125">
+      <DataClassMoniker Name="/AdvWorksDataContext/Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f95685b5-4417-479f-870b-73f11eb434b5" absoluteBounds="5.14, 0.96, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.125 : 2.11633422851563); (4.875 : 2.11633422851563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AdvWorksDataContext/Contact/Contact_Employee" />
+      <nodes>
+        <classShapeMoniker Id="cd72f467-0486-4310-a2ac-456edaec9ab1" />
+        <classShapeMoniker Id="229fce42-9dfa-468d-b825-5ef0dfc3ba85" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
