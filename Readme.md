@@ -11,7 +11,7 @@ This example binds the WinForms Data Grid control to data using the [LINQ to SQL
 The example fetches data from the *AdventureWorks* database on a local SQL Server. SQL queries are logged in the output window in the Visual Studio IDE.
 
 
-*Files to look at*:
+## Files to Review
 
 * [Form1.cs](./CS/LinqServerModeOnAdvWorks/Form1.cs) (VB: [Form1.vb](./VB/LinqServerModeOnAdvWorks/Form1.vb))
 
